@@ -6,7 +6,11 @@ pipeline {
                 sh 'date'
                 sh 'echo "Checking Python version: "'
                 sh 'python --version'
-                sh 'if [ $? == 0 ]; then echo "Version Check OK"; fi'
+            }
+        }
+        stage('deploy') {
+            steps {
+                sh 'echo "Enter Deploy stage"'
             }
         }
     }
