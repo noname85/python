@@ -10,7 +10,7 @@ pipeline {
         }
         stage('deploy1') {
             steps {
-                sh 'echo "Enter New Deploy stage"'
+                sh 'echo "Enter New new Deploy stage"'
             }
         }
     }
