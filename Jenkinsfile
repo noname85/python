@@ -4,6 +4,9 @@ pipeline {
         stage('build') {
             steps {
                 sh 'date'
+                sh 'echo "Checking Python version: "'
+                sh 'python --version'
+                sh 'if [ $? == 0 ]; then echo "Version Check OK"; fi'
             }
         }
     }
