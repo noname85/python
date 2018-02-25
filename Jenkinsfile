@@ -10,13 +10,8 @@ pipeline {
         }
         stage('deploy1') {
             steps {
-                sh 'echo "Enter Deploy stage"'
+                sh 'echo "Enter New Deploy stage"'
             }
         }
-        stage('Sanity check') {
-            steps {
-                input "Does the staging environment look ok?"
-            }
-        }        
     }
 }
