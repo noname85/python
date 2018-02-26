@@ -6,6 +6,7 @@ pipeline {
                 sh 'date'
                 sh 'echo "Checking Python version: "'
                 sh 'python --version'
+                sh 'sleep 20'
             }
         }
         stage('deploy1') {
