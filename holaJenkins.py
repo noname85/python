@@ -1,3 +1,3 @@
 #! /bin/python
 
-print "hola Jenkins"
+print ("hola Jenkins")
