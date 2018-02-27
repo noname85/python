@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'date'
-                sh 'echo "Checking Python version: "'
+                sh 'pwd'
                 sh 'python holaJenkins.py'
                 sh 'hostname'
             }
