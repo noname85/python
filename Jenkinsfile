@@ -14,5 +14,10 @@ pipeline {
                 sh 'echo "Enter New new Deploy stage"'
             }
         }
+        stage('create container') {
+            steps {
+                docker.buid("test1")
+            }
+        }        
     }
 }
