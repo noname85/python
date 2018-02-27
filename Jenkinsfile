@@ -5,7 +5,7 @@ pipeline {
             steps {
                 sh 'date'
                 sh 'echo "Checking Python version: "'
-                sh 'python --version'
+                sh 'python holaJenkins.py'
                 sh 'sleep 20'
             }
         }
